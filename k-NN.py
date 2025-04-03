@@ -10,7 +10,6 @@ import seaborn as sns
 from sklearn.metrics import confusion_matrix, classification_report
 from matplotlib.colors import ListedColormap
 
-data_path = r"C:\Users\Sinan\Desktop\Coding\Fundamentals_of_ML\HW1\wine.data"
 
 # given in the wine.names
 columns = [
@@ -20,7 +19,7 @@ columns = [
     'OD280/OD315 of diluted wines', 'Proline'
 ]
 
-wine_df = pd.read_csv(data_path, header=None, names=columns)
+wine_df = pd.read_csv("wine.data", header=None, names=columns)
 
 pd.set_option('display.max_rows', None)
 
